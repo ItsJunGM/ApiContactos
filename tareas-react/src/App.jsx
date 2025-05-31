@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import TaskForm from "./TaskForm";
 import TaskList from "./TaskList";
 import "./App.css";
-// URL de la API REST
-// Asegúrate de que el servidor esté corriendo en http://localhost:3000
-const API = "http://localhost:3000/api/tareas";
+
+const API = "https://apicontactos.onrender.com";
 function App() {
   const [tareas, setTareas] = useState([]);
   const cargarTareas = async () => {

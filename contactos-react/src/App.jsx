@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
+import "./App.css";
 
-const API = "http://localhost:3000/api/contactos";
+const API = "https://apicontactos.onrender.com/api/contactos";
 
 function App() {
   const [contactos, setContactos] = useState([]);
@@ -43,6 +44,7 @@ function App() {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Agenda de Contactos</h1>
+      <h2>Julián Garcia Murillo - 21111123</h2>
       <ContactForm onAdd={agregarContacto} />
       <ContactList
         contactos={contactos}
